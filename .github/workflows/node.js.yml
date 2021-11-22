@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - name: a11y friendly badges for GitHub
-    - uses: leonstafford/a11y-friendly-badges@0.0.1
+      uses: leonstafford/a11y-friendly-badges@0.0.1
