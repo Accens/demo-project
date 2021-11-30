@@ -7,7 +7,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "pa11y-ci -c config.pa11yci"
   },
   "dependencies": {
     "@stackbit/gatsby-plugin-menus": "0.0.4",
@@ -28,6 +29,7 @@
     "moment-strftime": "0.5.0",
     "node-sass": "4.14.0",
     "node-sass-utils": "1.1.2",
+    "pa11y-ci": "^3.0.0",
     "react": "16.5.1",
     "react-dom": "16.13.1",
     "react-helmet": "5.2.1",

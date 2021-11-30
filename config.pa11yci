@@ -1,0 +1,16 @@
+{
+    "defaults": {
+        "timeout": 10000,
+        "viewport": {
+            "width": 1920,
+            "height": 1080
+        },
+        "reporters": [
+                    "cli"
+                ]
+    },
+    "urls": [
+        "https://demo-project-b8183.netlify.app/",
+        "https://demo-project-b8183.netlify.app/portfolio/"
+    ]
+}
