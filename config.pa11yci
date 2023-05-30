@@ -10,7 +10,7 @@
                 ]
     },
     "urls": [
-        "https://demo-project-b8183.netlify.app/",
-        "https://demo-project-b8183.netlify.app/portfolio/"
+        "https://gatsby-ecommerce-theme.netlify.app/",
+        "https://gatsby-ecommerce-theme.netlify.app/product/sample/"
     ]
 }

@@ -3,4 +3,4 @@ publish = "public"
 command = "./stackbit-build.sh"
 
   [build.environment]
-  NODE_VERSION = "12"
+  NODE_VERSION = "14"
