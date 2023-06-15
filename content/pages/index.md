@@ -25,7 +25,6 @@ sections:
     image:
       type: Image
       url: /images/hero.svg
-      altText: Hero section image
   - type: CardsSection
     title: CardsSection Component
     subtitle: Section subtitle here
@@ -35,7 +34,6 @@ sections:
         image:
           type: Image
           url: /images/nextjs.svg
-          altText: First item image
         text: >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
