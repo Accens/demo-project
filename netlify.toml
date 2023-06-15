@@ -1,6 +1,6 @@
-[build]
-publish = "public"
-command = "./stackbit-build.sh"
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
-  [build.environment]
-  NODE_VERSION = "14"
+[build]
+  publish = ".next"
+  command = "npm run build"

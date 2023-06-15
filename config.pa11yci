@@ -10,7 +10,7 @@
                 ]
     },
     "urls": [
-        "https://gatsby-ecommerce-theme.netlify.app/",
-        "https://gatsby-ecommerce-theme.netlify.app/product/sample/"
+        "http://localhost:3000/",
+        "http://localhost:3000/about/"
     ]
 }

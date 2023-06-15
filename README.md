@@ -1,85 +1,74 @@
-# ✨ demo-project ✨
+# Stackbit Next.js + TypeScript + MUI Starter
 
-<img src="https://themes.stackbit.com/images/agency-demo-1024x768.png" width="600">
+<div style="text-align: center">
 
-This is a [Gatsby](https://gatsbyjs.com) site using [Sanity](https://www.sanity.io) as a [CMS](https://en.wikipedia.org/wiki/Content_management_system). It was created with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) in under a minute.
+![Next.js + TS + MUI Stackbit Starter](https://assets.stackbit.com/docs/ts-nextjs-starter-thumb.png)
 
-You can [create a site](https://app.stackbit.com/create?theme=https://github.com/stackbit-themes/agency-unibit&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) just like this one, or explore some variations. How about a different:
+</div>
 
-<details>
-        <summary>🎨 &nbsp;<strong>Look</strong></summary>
-        <ul>
-                <li><a href="https://app.stackbit.com/create?theme=https://github.com/snipcart/stackbit-theme-planty&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">An e-commerce theme powered by Snipcart</a></li>
-                <li><a href="https://app.stackbit.com/create?theme=https://github.com/stackbit-themes/fresh-unibit&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">A personal theme with a blog</a></li>
-                <li><a href="https://app.stackbit.com/create?theme=https://github.com/stackbit-themes/starter-unibit&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">Ultra customizable starter. A developers&#39; favorite.</a></li>
-                </ul>
-</details>
+This is a minimal starting point for new Stackbit projects. It is built with Next.js, TypeScript, and [MUI](https://mui.com/), and is equipped with visual editing capabilities using Stackbit. It uses markdown files as the content source. See below for [other Stackbit example projects](#other-stackbit-projects).
 
-<details>
-        <summary>✏️ &nbsp;<strong>CMS</strong></summary>
-        <ul>
-                <li><a href="https://app.stackbit.com/create?cms=datocms&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">Dato CMS</a></li>
-                <li><a href="https://app.stackbit.com/create?cms=nocms&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">Git</a></li>
-                <li><a href="https://app.stackbit.com/create?cms=forestry&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">Forestry</a></li>
-                </ul>
-</details>
+**⚡ Demo:** [stackbit-ts-mui-nextjs-starter.netlify.app](https://stackbit-ts-mui-nextjs-starter.netlify.app/)
 
-<details>
-        <summary>⚙️ &nbsp;<strong>Static site generator</strong></summary>
-        <ul>
-                <li><a href="https://app.stackbit.com/create?ssg=nextjs&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">Next.js</a></li>
-                <li><a href="https://app.stackbit.com/create?ssg=hugo&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">Hugo</a></li>
-                <li><a href="https://app.stackbit.com/create?ssg=jekyll&utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes">Jekyll</a></li>
-                </ul>
-</details>
 
-## Develop Locally
+## Features
 
-1. Install [Node.js and npm](https://nodejs.org/en/)
+This is meant to be a simple starting point that demonstrates the use of bringing your own component library, such as MUI.
 
-1. Install npm dependencies:
+In addition to MUI support, this project contains the following:
 
-        npm install
+- **Flexible Pages:** Simple and flexible page model that lets editors add new pages.
+- **Basic Components:** A few basic components to add to new pages.
+- **Layout Elements:** Header and footer elements automatically added to pages.
+- **Component & Template Presets:** Predefined arrangements of content and components for faster editing. [Learn more](https://docs.stackbit.com/conceptual-guides/content-presets/).
+- **TypeScript Support:** Components and content are type-safe. (See `types` directory for definitions.)
 
-1. Get "stackbit-deploy (Read+Write)" API token from your [Sanity management console](https://manage.sanity.io/projects/q96vap5k/settings/api)
+## Getting Started
 
-1. Assign this access token to the `SANITY_ACCESS_TOKEN` environment variable:
+The typical development process is to begin by working locally.
 
-        export SANITY_ACCESS_TOKEN={sanity_read_write_api_token}
+Create local Stackbit project from this repo:
 
-1. Run the following command to fetch the content from Sanity:
+```txt
+npx create-stackbit-app@latest --starter ts-nextjs
+```
 
-        npx @stackbit/sanity-pull --ssg gatsby --sanity-project-id q96vap5k --sanity-token $SANITY_ACCESS_TOKEN
+Run the Next.js development server:
 
-1. [Optional] Run Sanity Studio locally: install sanity-cli `npm install -g @sanity/cli`, navigate to the `/studio` directory, and run `sanity install` and `sanity start`.
-You may be required to login with the Sanity CLI.
+```txt
+cd my-stackbit-site
+npm run dev
+```
 
-1. Start the Gatsby local development server:
+Install the Stackbit CLI. Then open a new terminal window in the same project directory and run the Stackbit Dev server:
 
-        npm run develop
+```txt
+npm install -g @stackbit/cli
+stackbit dev
+```
 
-1. Open [http://localhost:8000/](http://localhost:8000/) in the browser
+This outputs your own Stackbit URL. Open this, register or sign in, and you will be directed to Stackbit's visual editor for your new project.
 
-1. 🎉
+![Next.js Dev + Stackbit Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
 
-## Editing Content
+## Next Steps
 
-To start editing your site, you can use the Sanity interface at https://demo-project-b8183.sanity.studio/.
+Here are a few suggestions on what to do next if you're new to Stackbit:
 
-Alternatively, you can use the free on-page editing experience provided by the [Stackbit Studio](https://stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes).
+- Learn [how Stackbit works](https://docs.stackbit.com/conceptual-guides/how-stackbit-works/)
+- Follow the [_Getting Started_ tutorial](https://docs.stackbit.com/getting-started/)
+- Explore the [how-to guides](https://docs.stackbit.com/how-to-guides/) for help while developing your site
 
-[![](https://i3.ytimg.com/vi/zd9lGRLVDm4/hqdefault.jpg)](https://stackbit.link/project-readme-lead-video)
+## Other Stackbit Projects
 
-Here's a few resources to get you started:
+Stackbit has a number of examples that you can use to create a new project or evaluate Stackbit. Run the following command to see a list of available examples:
 
-- 📺 &nbsp; [Editing Content](https://stackbit.link/project-readme-editing-video)
-- 📺 &nbsp; [Adding, Reordering and Deleting Items](https://stackbit.link/project-readme-adding-video)
-- 📺 &nbsp; [Collaboration](https://stackbit.link/project-readme-collaboration-video)
-- 📺 &nbsp; [Publishing](https://stackbit.link/project-readme-publishing-video)
-- 📚 &nbsp; [Stackbit Documentation](https://stackbit.link/project-readme-documentation)
+```txt
+npx create-stackbit-app@latest --help
+```
 
-If you need a hand, make sure to check the [Stackbit support page](https://stackbit.link/project-readme-support).
+You can also visit [our `stackbit-themes` GitHub organization](https://github.com/stackbit-themes)
 
-## Colophon
+## Join the Community
 
-Generated at `2021-11-22T11:43:38.524Z` by Stackbit version `0.3.55`.
+[Join us on Discord](https://discord.gg/HUNhjVkznH) for community support and to showcase what you build with this starter.

@@ -1,41 +1,49 @@
 {
-  "name": "stackbit-agency-theme",
-  "description": "Stackbit Agency Theme",
-  "version": "0.0.1",
-  "license": "MIT",
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve",
-    "test": "pa11y-ci -c config.pa11yci"
-  },
-  "dependencies": {
-    "@stackbit/gatsby-plugin-menus": "0.0.4",
-    "babel-runtime": "6.26.0",
-    "chokidar": "3.4.0",
-    "classnames": "2.2.6",
-    "fs-extra": "7.0.1",
-    "gatsby": "2.25.4",
-    "gatsby-plugin-react-helmet": "3.3.3",
-    "gatsby-plugin-sass": "2.8.0",
-    "gatsby-plugin-typescript": "2.4.4",
-    "gatsby-source-filesystem": "2.3.10",
-    "gatsby-transformer-remark": "2.8.14",
-    "js-yaml": "3.12.2",
-    "lodash": "4.17.11",
-    "marked": "0.6.1",
-    "moment": "2.23.0",
-    "moment-strftime": "0.5.0",
-    "node-sass": "4.14.0",
-    "node-sass-utils": "1.1.2",
-    "pa11y-ci": "^3.0.0",
-    "react": "16.5.1",
-    "react-dom": "16.13.1",
-    "react-helmet": "5.2.1",
-    "react-html-parser": "2.0.2",
-    "react-script-tag": "1.1.2",
-    "rehype-react": "3.0.2",
-    "sprintf-js": "1.1.2"
-  }
+    "name": "mui-nextjs-starter",
+    "version": "0.1.1",
+    "engines": {
+        "node": ">=16"
+    },
+    "sideEffects": false,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "export": "next export",
+        "prettier": "prettier --write src",
+        "test": "(next start&) && pa11y-ci -c config.pa11yci"
+    },
+    "dependencies": {
+        "@emotion/cache": "^11.11.0",
+        "@emotion/react": "^11.11.0",
+        "@emotion/server": "^11.11.0",
+        "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.11.16",
+        "@mui/material": "^5.13.4",
+        "front-matter": "^4.0.2",
+        "glob": "^9.3.1",
+        "js-yaml": "^4.1.0",
+        "markdown-to-jsx": "^7.2.1",
+        "next": "^13.4.4",
+        "pa11y-ci": "^3.0.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@stackbit/cms-git": "^0.3.6",
+        "@stackbit/types": "^0.7.3",
+        "@types/glob": "^8.1.0",
+        "@types/js-yaml": "^4.0.5",
+        "@types/node": "^20.2.5",
+        "@types/react": "^18.2.8",
+        "autoprefixer": "^10.4.14",
+        "eslint": "^7.32.0",
+        "eslint-config-next": "^13.2.4",
+        "eslint-config-prettier": "^8.8.0",
+        "prettier": "^2.8.8",
+        "typescript": "^4.9.5"
+    },
+    "description": "A Nextjs page builder, component library and data source mapper all in one.",
+    "main": "next.config.js",
+    "license": "MIT"
 }
