@@ -10,7 +10,7 @@
                 ]
     },
     "urls": [
-        "demo-project-b8183.netlify.app",
-        "demo-project-b8183.netlify.app/about/"
+        "https://demo-project-b8183.netlify.app",
+        "https://demo-project-b8183.netlify.app/about/"
     ]
 }
