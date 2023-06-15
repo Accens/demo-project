@@ -11,7 +11,7 @@
         "start": "next start",
         "export": "next export",
         "prettier": "prettier --write src",
-        "test": "pa11y-ci -c config.pa11yci"
+        "test": "next build && (next start&) && pa11y-ci -c config.pa11yci"
     },
     "dependencies": {
         "@emotion/cache": "^11.11.0",

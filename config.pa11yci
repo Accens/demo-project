@@ -10,7 +10,7 @@
                 ]
     },
     "urls": [
-        "https://demo-project-b8183.netlify.app",
-        "https://demo-project-b8183.netlify.app/about/"
+        "http://localhost:3000",
+        "http://localhost:3000/about"
     ]
 }
