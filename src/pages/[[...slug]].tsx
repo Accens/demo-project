@@ -1,4 +1,5 @@
 import * as React from 'react';
+import ReactDOM  from 'react-dom';
 import Head from 'next/head';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import type * as types from 'types';
@@ -13,6 +14,11 @@ import MuiContainer from '@mui/material/Container';
 export type Props = { page: types.Page; siteConfig: types.Config };
 
 const Page: React.FC<Props> = ({ page, siteConfig }) => {
+    
+    if (process.env.NODE_ENV !== 'production') {
+      const axe = require('@axe-core/react');
+      axe(React, ReactDOM, 1000);
+    }
     return (
         <MuiBox sx={{ px: 3 }} data-sb-object-id={page.__id}>
             <MuiContainer maxWidth="lg" disableGutters={true}>
